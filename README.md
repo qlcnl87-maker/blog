@@ -45,18 +45,17 @@ cp .env.example .env.local
 ## Deployment
 
 ### 1. GitHub Push (Completed)
-Changes are already pushed to your GitHub repository.
+Changes are already pushed to your GitHub repository: [https://github.com/qlcnl87-maker/blog](https://github.com/qlcnl87-maker/blog)
 
 ### 2. Live Deployment via Vercel (Recommended)
-To get a live URL (e.g., `https://your-blog.vercel.app`), follow these steps:
+To get a live URL (e.g., `https://your-blog.vercel.app`) quickly:
 
-1.  Go to [Vercel Dashboard](https://vercel.com/new).
-2.  **Import** your `blog` repository from GitHub.
+1.  **[Click here to import to Vercel](https://vercel.com/new/import?s=https%3A%2F%2Fgithub.com%2Fqlcnl87-maker%2Fblog)**
+2.  Login with your GitHub account.
 3.  In the **Environment Variables** section, add:
     - `NEXT_PUBLIC_SUPABASE_URL`: (Your Supabase URL)
     - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: (Your Supabase Anon Key)
 4.  Click **Deploy**.
-5.  Once finished, Vercel will provide a live URL.
 
 ### GitHub Actions
 A GitHub Action is configured to automatically verify the build on every push to the `main` branch.
