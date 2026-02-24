@@ -44,12 +44,21 @@ cp .env.example .env.local
 
 ## Deployment
 
+### 1. GitHub Push (Completed)
+Changes are already pushed to your GitHub repository.
+
+### 2. Live Deployment via Vercel (Recommended)
+To get a live URL (e.g., `https://your-blog.vercel.app`), follow these steps:
+
+1.  Go to [Vercel Dashboard](https://vercel.com/new).
+2.  **Import** your `blog` repository from GitHub.
+3.  In the **Environment Variables** section, add:
+    - `NEXT_PUBLIC_SUPABASE_URL`: (Your Supabase URL)
+    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: (Your Supabase Anon Key)
+4.  Click **Deploy**.
+5.  Once finished, Vercel will provide a live URL.
+
 ### GitHub Actions
 A GitHub Action is configured to automatically verify the build on every push to the `main` branch.
-
-### Environment Setup on Deployment Platforms (Vercel/GitHub Secrets)
-Make sure to add the following environment variables to your deployment platform:
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
 ## Learn More
